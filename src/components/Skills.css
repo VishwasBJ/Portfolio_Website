@@ -1,0 +1,324 @@
+.skills {
+  background: transparent;
+  padding: 100px 50px;
+}
+
+.skills h2 {
+  margin-bottom: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 217, 255, 0.1);
+  border: 1px solid rgba(0, 217, 255, 0.1);
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0.1s; }
+.skill-card:nth-child(2) { animation-delay: 0.2s; }
+.skill-card:nth-child(3) { animation-delay: 0.3s; }
+.skill-card:nth-child(4) { animation-delay: 0.4s; }
+.skill-card:nth-child(5) { animation-delay: 0.5s; }
+.skill-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
+  border-color: rgba(0, 217, 255, 0.5);
+}
+
+.skill-icon {
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: var(--primary);
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+/* Java Animation - Coffee steam */
+.java-animation {
+  animation: cupShake 2s ease-in-out infinite;
+}
+
+@keyframes cupShake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+}
+
+.steam {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: steamRise 2s ease-in-out infinite;
+}
+
+.steam-1 { animation-delay: 0s; }
+.steam-2 { animation-delay: 0.3s; }
+.steam-3 { animation-delay: 0.6s; }
+
+@keyframes steamRise {
+  0% {
+    stroke-dashoffset: 20;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* React Animation - Gentle pulse */
+.react-animation {
+  animation: reactGentlePulse 3s ease-in-out infinite;
+}
+
+@keyframes reactGentlePulse {
+  0%, 100% { 
+    transform: scale(1);
+  }
+  50% { 
+    transform: scale(1.05);
+  }
+}
+
+.orbit {
+  animation: orbitPulse 3s ease-in-out infinite;
+}
+
+.orbit-1 { animation-delay: 0s; }
+.orbit-2 { animation-delay: 0.5s; }
+.orbit-3 { animation-delay: 1s; }
+
+@keyframes orbitPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Node.js Animation - Gentle float */
+.node-animation {
+  animation: nodeFloat 4s ease-in-out infinite;
+}
+
+@keyframes nodeFloat {
+  0%, 100% { 
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(-3px);
+  }
+}
+
+.particle {
+  animation: particleGlow 2s ease-in-out infinite;
+}
+
+.particle-1 { animation-delay: 0s; }
+.particle-2 { animation-delay: 0.4s; }
+.particle-3 { animation-delay: 0.8s; }
+
+@keyframes particleGlow {
+  0%, 100% { 
+    opacity: 0.3;
+  }
+  50% { 
+    opacity: 0.7;
+  }
+}
+
+/* Database Animation - Data flow */
+.database-animation {
+  animation: dbPulse 2s ease-in-out infinite;
+}
+
+@keyframes dbPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.db-line {
+  animation: dbLinePulse 2s ease-in-out infinite;
+}
+
+.db-line-1 { animation-delay: 0.3s; }
+.db-line-2 { animation-delay: 0.6s; }
+
+@keyframes dbLinePulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.data-flow {
+  animation: dataMove 2s ease-in-out infinite;
+}
+
+.data-1 { animation-delay: 0s; }
+.data-2 { animation-delay: 1s; }
+
+@keyframes dataMove {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+}
+
+/* Mobile Animation - Notifications */
+.mobile-animation {
+  animation: phoneVibrate 3s ease-in-out infinite;
+}
+
+@keyframes phoneVibrate {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50% { transform: translateX(-1px); }
+  20%, 40% { transform: translateX(1px); }
+}
+
+.notification {
+  animation: notifPop 2s ease-in-out infinite;
+}
+
+.notif-1 { animation-delay: 0s; }
+.notif-2 { animation-delay: 0.3s; }
+.notif-3 { animation-delay: 0.6s; }
+
+@keyframes notifPop {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.signal {
+  animation: signalWave 2s ease-in-out infinite;
+}
+
+.signal-1 { animation-delay: 0s; }
+.signal-2 { animation-delay: 0.3s; }
+
+@keyframes signalWave {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Git Animation - Commit flow */
+.git-animation {
+  animation: gitFlow 1s ease-in-out infinite;
+}
+
+@keyframes gitFlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.commit {
+  animation: commitPulse 3s ease-in-out infinite;
+}
+
+.commit-1 { animation-delay: 0s; }
+.commit-2 { animation-delay: 0.5s; }
+.commit-3 { animation-delay: 1s; }
+.commit-4 { animation-delay: 1.5s; }
+.commit-5 { animation-delay: 2s; }
+.commit-6 { animation-delay: 2.5s; }
+
+@keyframes commitPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.skill-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  background: rgba(0, 217, 255, 0.1);
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 10px;
+  transition: width 1.5s ease;
+  position: relative;
+  box-shadow: 0 0 15px var(--primary);
+}
+
+.skill-level {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-top: 8px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 80px 20px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
