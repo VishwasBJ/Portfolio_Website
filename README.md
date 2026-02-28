@@ -122,7 +122,7 @@ portfolio/
 
 ## Contact
 
-- Email: vishwasjaj2004@gmail.com
+- Email: vishwasjai2004@gmail.com
 - Phone: +91 7022577494
 - GitHub: [VishwasBJ](https://github.com/VishwasBJ)
 - LinkedIn: [vishwas-b-j](https://www.linkedin.com/in/vishwas-b-j)
